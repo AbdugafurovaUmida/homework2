@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(248, 245, 245);
+            font-family: Georgia, 'Times New Roman', Times, serif,sans-serif;
+            font-weight: 400;
+        }
+        .div-one{
+            width: 600px;
+            height: 300px;
+             background-image: linear-gradient(to right bottom, #637ceb, #866aeb, #9c5be1, #c165e4, #e170e6);
+            margin: 0 auto;
+            border-radius: 20px;
+            text-align: center;
+            position: relative;
+            padding: 25px;
+        }
+        .div-one__title{
+            font-family: Georgia, 'Times New Roman', Times, serif,sans-serif;
+            color: rgb(241, 234, 234);
+            font-size: 30px;
+        }
+        .div-one__text{
+            color: rgb(241, 234, 234) ;
+            font-size: 20px;
+            width: 400px;
+            margin: 0 auto;
+        }
+        #div-two{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 180px;
+            left: 0;
+            right: 0;
+            background-color: white;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 15px;
+            padding: 10px 0;
+        }
+        img{
+            margin: 20px 0;
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease;
+            right: 36%;
+            display: block;
+            border-radius: 50%;
+        }
+        #name{
+            top: 240px;
+            display:inline-block;
+            position: absolute;
+            opacity: 0;
+            background-color: white;
+            transition: opacity 1s ease;
+            width: 200px;
+            right: 30%;
+        }
+        #name:nth-child(12){
+            opacity: 1;
+        }
+        
+        img:nth-child(2){
+            opacity: 1;
+        }
+        .sent{
+            position: absolute;
+            top: 300px;
+            left: 0;
+            right: 0; 
+        }
+        .btn{
+            display: block;
+            margin: 40px auto 0;
+            width: 250px;
+            height: 50px;
+            color: white;
+            background-image: linear-gradient(to right bottom, #637ceb, #866aeb, #9c5be1, #c165e4, #e170e6);
+            border: transparent;
+            border-radius: 10px;
+        }
+        .symbol{
+            position: absolute;
+            opacity: 0;
+            display: block;
+            width: 120px;
+            height: 20px;
+            border-radius: 15px;
+            background-color: rgb(187, 187, 187);
+            margin: 0 auto 20px;
+            color: rgb(243, 240, 240);
+            text-decoration: none;
+            right: 38%;
+            transition: opacity 1s ease;
+        }
+        .symbol:nth-child(1){
+            opacity: 1;
+        }
+        .sent__span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: greenyellow;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .sent__span_two{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color:rgb(228, 109, 109);
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div-one">
+        <h1 class="div-one__title">Hi George</h2>
+        <p class="div-one__text">You can contact us whenever you need help or just curious about something.</p>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img1.jpg" alt="profiles">
+        <img src="img/img2.jpg" alt="profiles">
+        <img src="img/img3.jpg" alt="profiles">
+        <img src="img/img4.jpg" alt="profiles">
+        <img src="img/img5.jpg" alt="profiles">
+        <img src="img/img6.jpg" alt="profiles">
+        <img src="img/img7.jpg" alt="profiles">
+        <img src="img/img8.jpg" alt="profiles">
+        <img src="img/img9.jpg" alt="profiles">
+        <img src="img/img10.jpg" alt="profiles">
+        <h3 id="name">Essie Walton</h3>
+        <h3 id="name">Anna Jeck</h3>
+        <h3 id="name">Carolina Petrson</h3>
+        <h3 id="name">Carl John</h3>
+        <h3 id="name">William Ethan</h3>
+        <h3 id="name">Noah Liam</h3>
+        <h3 id="name">Mason Jacob</h3>
+        <h3 id="name">Michael Alexander</h3>
+        <h3 id="name">Oliver Jack</h3>
+        <h3 id="name">Harry Charley</h3>
+        <div class="sent">
+            <a class="symbol" href="#"><span class="sent__span"></span>Active</a>
+            <a class="symbol" href="#"><span class="sent__span_two"></span>Not Active</a>
+        <button class="btn">Send a Message</button>
+        </div>
+        
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img1.jpg" alt="profiles">
+        <h3>Essie Walton</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img2.jpg" alt="profiles">
+        <h3>Anna Jeck</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img3.jpg" alt="profiles">
+        <h3>Carolina Petrson</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img4.jpg" alt="profiles">
+        <h3>Carl John</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img5.jpg" alt="profiles">
+        <h3>William Ethan</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img6.jpg" alt="profiles">
+        <h3>Noah Liam</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img7.jpg" alt="profiles">
+        <h3>Mason Jacob</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img8.jpg" alt="profiles">
+        <h3>Michael Alexander</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img9.jpg" alt="profiles">
+        <h3>Oliver Jack</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>
+    <div id="div-two">
+        <h2>Start chatting</h2>
+        <img src="img/img10.jpg" alt="profiles">
+        <h3>Harry Charley</h3>
+        <a class="symbol" href="#"><span></span>Active</a>
+        <button class="btn">Send a Message</button>
+    </div>-->
+    
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
